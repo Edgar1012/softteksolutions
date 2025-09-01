@@ -5,19 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Softtek Solutions – Websites, Mobile Apps & AI</title>
   <meta name="description" content="Softtek Solutions builds websites, mobile apps, AI solutions with focus on healthcare, POS and restaurant tech." />
-  <meta property="og:title" content="Softtek Solutions" />
-  <meta property="og:description" content="Websites, Mobile Apps, AI – Healthcare, POS & Restaurant solutions." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#2563eb" />
-  <!-- Tailwind (CDN) so no build step needed -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Smooth scrolling for anchor links */
-    html { scroll-behavior: smooth; }
-  </style>
+  <style>html{scroll-behavior:smooth;}</style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-  <!-- Top Bar / Navbar -->
+  <!-- Navbar -->
   <header class="bg-white sticky top-0 z-50 shadow">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <a href="#" class="text-2xl font-extrabold text-blue-600">Softtek Solutions</a>
@@ -25,6 +17,7 @@
         <a href="#about" class="hover:text-blue-600">About</a>
         <a href="#services" class="hover:text-blue-600">Services</a>
         <a href="#industries" class="hover:text-blue-600">Industries</a>
+        <a href="#team" class="hover:text-blue-600">Team</a>
         <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
       <a href="#contact" class="md:inline-block hidden bg-blue-600 text-white px-4 py-2 rounded-xl shadow hover:bg-blue-700">Get in touch</a>
@@ -66,7 +59,6 @@
     <div class="max-w-6xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card -->
         <div class="bg-white rounded-2xl shadow p-6">
           <h3 class="text-xl font-semibold text-blue-700">Website Development</h3>
           <p class="mt-2">Fast, SEO‑friendly sites with modern stacks and best practices.</p>
@@ -105,7 +97,40 @@
     </div>
   </section>
 
-  <!-- Contact (Netlify Form) -->
+  <!-- Team -->
+  <section id="team" class="bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+      <h2 class="text-3xl font-bold mb-10">Our Team</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <img src="https://via.placeholder.com/150" alt="Mr. Faraz" class="w-28 h-28 mx-auto rounded-full object-cover" />
+          <h3 class="mt-4 font-semibold text-lg">Mr. Faraz</h3>
+          <p class="text-blue-600 text-sm">Marketing Head</p>
+          <p class="mt-2 text-sm text-gray-600">Driving brand visibility, client engagement, and growth strategies.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <img src="https://via.placeholder.com/150" alt="Mr. Asqik" class="w-28 h-28 mx-auto rounded-full object-cover" />
+          <h3 class="mt-4 font-semibold text-lg">Mr. Asqik</h3>
+          <p class="text-blue-600 text-sm">Technical Architect</p>
+          <p class="mt-2 text-sm text-gray-600">Designs scalable architectures and ensures technical excellence.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <img src="https://via.placeholder.com/150" alt="Mr. Sheik Mohammed" class="w-28 h-28 mx-auto rounded-full object-cover" />
+          <h3 class="mt-4 font-semibold text-lg">Mr. Sheik Mohammed</h3>
+          <p class="text-blue-600 text-sm">Proprietor</p>
+          <p class="mt-2 text-sm text-gray-600">Founder and visionary, leading the company with innovation and values.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow">
+          <img src="https://via.placeholder.com/150" alt="Mr. Edgar" class="w-28 h-28 mx-auto rounded-full object-cover" />
+          <h3 class="mt-4 font-semibold text-lg">Mr. Edgar</h3>
+          <p class="text-blue-600 text-sm">Product Manager</p>
+          <p class="mt-2 text-sm text-gray-600">Manages product lifecycle, aligning client needs with solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="bg-gray-100">
     <div class="max-w-2xl mx-auto px-4 py-16">
       <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
@@ -136,9 +161,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
